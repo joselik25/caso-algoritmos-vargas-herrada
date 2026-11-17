@@ -4,7 +4,6 @@ using System.Diagnostics;
 
 public static class Caja
 {
-    // Metodo original: compara cada comprobante con los siguientes.
     public static bool HayComprobantesRepetidosPorPares(int[] comprobantes)
     {
         for (int a = 0; a < comprobantes.Length; a++)
@@ -19,7 +18,6 @@ public static class Caja
         return false;
     }
 
-    // Metodo mejorado: utiliza HashSet para detectar repetidos.
     public static bool HayComprobantesRepetidosCurado(int[] comprobantes)
     {
         HashSet<int> vistos = new HashSet<int>();
@@ -33,7 +31,6 @@ public static class Caja
         return false;
     }
 
-    // Genera una lista sin comprobantes repetidos.
     public static int[] GenerarSinRepetidos(int n, int semilla = 77)
     {
         int[] datos = new int[n];
@@ -92,7 +89,6 @@ public class Program
             ? "RESULTADO: TODOS LOS CASOS SON CORRECTOS."
             : "RESULTADO: HAY CASOS QUE DEBEN CORREGIRSE.");
 
-        // Medicion inicial de ejemplo.
         int[] grande = Caja.GenerarSinRepetidos(5000);
 
         Stopwatch reloj = Stopwatch.StartNew();
