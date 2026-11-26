@@ -57,8 +57,10 @@ La programación dinámica mantiene tiempos de ejecución bajos en las pruebas r
 
 ## 6. Conclusión
 
-La programación dinámica resultó más eficiente que la fuerza bruta en las pruebas realizadas.
+En las cuatro pruebas realizadas, ambos algoritmos encontraron el mismo aprovechamiento máximo.
 
-Ambos algoritmos proporcionaron resultados iguales, pero la programación dinámica necesitó menos tiempo de ejecución.
+La fuerza bruta presentó un incremento considerable en su tiempo de ejecución al aumentar la cantidad de pedidos, debido a que evalúa todas las combinaciones posibles.
 
-Por tanto, se concluye que la programación dinámica es la estrategia más conveniente para resolver este problema de optimización, especialmente cuando aumenta la cantidad de pedidos.
+La programación dinámica obtuvo tiempos menores en las pruebas realizadas, reutilizando los resultados almacenados en su arreglo.
+
+Por tanto, para el problema y las capacidades evaluadas, la programación dinámica resultó más eficiente que la fuerza bruta. Sin embargo, su rendimiento también depende de la capacidad disponible.
